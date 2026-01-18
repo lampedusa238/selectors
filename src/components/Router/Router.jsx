@@ -1,4 +1,4 @@
-import {createBrowserRouter, Navigate} from "react-router-dom";
+import {createHashRouter, Navigate} from "react-router-dom";
 import Root from "../Root/Root.jsx";
 import TreesSelectorPage from "../../pages/TreesSelectorsPage/TreesSelectorPage.jsx";
 import CompositeSelectorsPage from "../../pages/CompositeSelectorsPage/CompositeSelectorsPage.jsx";
@@ -9,7 +9,7 @@ import SuccessFirePage from "../../pages/SuccessFirePage/SuccessFirePage.jsx";
 import RegistrationWithTimer from "../../pages/RegistrationWithTimer/RegistrationWithTimer.jsx";
 import RegistrationFailPage from "../../pages/RegistrationFailPage/RegistrationFailPage.jsx";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
